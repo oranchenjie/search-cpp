@@ -60,7 +60,6 @@ for(int i=0;i<lightbars.size();i++){
 }
      imshow("装甲板检测结果",result);
 	 waitKey(0);
-	 destroyAllWindows();
 	 vector<Point3f> solidpoint;
 	 vector<Point2f> corners;
 	 corners.push_back(lightbars[1].endpoints[0]);
@@ -68,10 +67,10 @@ for(int i=0;i<lightbars.size();i++){
 	 corners.push_back(lightbars[0].endpoints[0]);
 	 	 corners.push_back(lightbars[1].endpoints[1]);
 	 cout<<corners<<endl;
-	 solidpoint.emplace_back(0,-0.625,0.25);
-	 solidpoint.emplace_back(0,0.625,0.25);
-	 solidpoint.emplace_back(0,0.625,-0.25);
-	 solidpoint.emplace_back(0,-0.625,-0.25);
+	 solidpoint.emplace_back(0,-0.65,0.25);
+	 solidpoint.emplace_back(0,0.65,0.25);
+	 solidpoint.emplace_back(0,0.65,-0.25);
+	 solidpoint.emplace_back(0,-0.65,-0.25);
 	 Mat rvec,tvec;
 	  Mat includeinsex=(Mat_<double>(3,3) << 
         928.130989,0,377.572945,
