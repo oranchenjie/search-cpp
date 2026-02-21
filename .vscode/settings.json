@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "/usr/include/opencv4",       // OpenCV 头文件路径
+        "/usr/include",               // 系统头文件路径
+        "/usr/include/x86_64-linux-gnu/c++/9", // GCC 头文件路径（根据版本调整）
+        "${workspaceFolder}/**"        // 工作区头文件
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/gcc", // WSL 中的 GCC 编译器路径
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "clang-x64"
+    }
+  ],
+  "version": 4
+}
